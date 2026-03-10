@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --blue-dark: #1f3a5f;
+    --blue-main: #2f5f8f;
+    --blue-light: #cfe5ef;
+    --blue-soft: #eef7fb;
+    --text: #222;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background: var(--blue-soft);
+    color: var(--text);
+    line-height: 1.6;
+
+}
+
+header {
+
+    background: var(--blue-dark);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+
+}
+
+header h1 {
+
+    font-size: 36px;
+    letter-spacing: 1px;
+
+}
+
+.subtitle {
+
+    opacity: 0.9;
+    margin-top: 5px;
+
+}
+
+nav {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+nav a:hover {
+
+    opacity: 0.7;
+
+}
+
+main {
+
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+section {
+
+    padding: 70px 25px;
+
+}
+
+.hero {
+
+    text-align: center;
+    background: white;
+
+}
+
+.hero h2 {
+
+    font-size: 32px;
+    color: var(--blue-dark);
+
+}
+
+.video-container {
+
+    max-width: 800px;
+    margin: 30px auto;
+
+}
+
+video {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.intro {
+
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+
+#programme {
+
+    text-align: center;
+
+}
+
+#programme h2 {
+
+    color: var(--blue-dark);
+    margin-bottom: 20px;
+
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+article {
+
+    background: var(--blue-light);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+article h3 {
+
+    color: var(--blue-dark);
+    margin-bottom: 15px;
+
+}
+
+ul {
+
+    padding-left: 20px;
+
+}
+
+#actions article {
+
+    background: white;
+    border: 1px solid #d9e5ee;
+
+}
+
+#equipe {
+
+    text-align: center;
+
+}
+
+#equipe img {
+
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: block;
+
+}
+
+#vision {
+
+    background: var(--blue-light);
+
+}
+
+.vision-list {
+
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
+
+}
+
+.vision-text {
+
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+footer {
+
+    background: var(--blue-dark);
+    color: white;
+    text-align: center;
+    padding: 35px;
+
+}
+
+
+/* 📱 Адаптация под телефон */
+
+@media (max-width:768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+.hero-image {
+
+    max-width: 800px;
+    margin: 30px auto;
+
+}
+
+.hero-image img {
+
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+}
+.action-section {
+
+    padding: 80px 20px;
+
+}
+
+.action-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+.action-image {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+.action-image img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+.action-content {
+
+    flex: 2;
+
+    background: #cfe5ef;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+}
+
+.action-content h2 {
+
+    margin-bottom: 20px;
+
+    color: #1f3a5f;
+
+}
+
+.action-content ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.action-content li {
+
+    margin-bottom: 12px;
+
+    padding-left: 25px;
+
+    position: relative;
+
+    font-size: 16px;
+
+}
+
+.action-content li::before {
+
+    content: "✔";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #1f3a5f;
+
+    font-weight: bold;
+
+}.action-section {
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition: all 0.8s ease;
+
+}
+
+.action-section.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
