@@ -33,3 +33,23 @@ afterImage.style.clipPath = `inset(0 ${100-value}% 0 0)`;
 });
 
 });
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("modal-img");
+
+document.querySelectorAll(".project-card img, .parking-item img").forEach(img => {
+
+img.addEventListener("click", function(){
+
+modal.style.display = "block";
+
+modalImg.src = this.src;
+
+});
+
+});
+
+document.querySelector(".close-modal").onclick = function(){
+
+modal.style.display = "none";
+
+}
