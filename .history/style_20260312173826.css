@@ -2307,33 +2307,3 @@ section {
     margin-bottom: 40px;
 
 }
-.project-block {
-
-    border-top: 6px solid #2f5f8f;
-
-}
-.facebook-link {
-
-    display: inline-block;
-
-    margin-top: 10px;
-
-    font-weight: bold;
-
-    font-size: 18px;
-
-    color: #1f3a5f;
-
-    text-decoration: underline;
-
-    transition: all 0.3s;
-
-}
-
-.facebook-link:hover {
-
-    color: #2f5f8f;
-
-    transform: translateY(-2px);
-
-}
