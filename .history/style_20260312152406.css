@@ -2252,26 +2252,3 @@ footer {
     color: #666;
 
 }
-@media (max-width:768px) {
-
-    .platane-gallery {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .platane-item img {
-
-        height: 220px;
-
-    }
-
-}.card-icon {
-
-    width: 45px;
-
-    height: 45px;
-
-    margin-bottom: 10px;
-
-}
